@@ -1,0 +1,202 @@
+/* Font import */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-400.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/montserrat-400.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-400.woff2") format("woff2"), url("../fonts/montserrat-400.woff") format("woff"), url("../fonts/montserrat-400.ttf") format("truetype"), url("../fonts/montserrat-400.svg#Montserrat") format("svg");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-700.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-700.woff2") format("woff2"), url("../fonts/montserrat-700.woff") format("woff"), url("../fonts/montserrat-700.ttf") format("truetype"), url("../fonts/montserrat-700.svg#Montserrat") format("svg");
+}
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  font-stretch: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Style */
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100%;
+  background: #ffffff;
+  user-select: none;
+}
+
+main {
+  height: calc(100% - 50px);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .code {
+  font-size: calc(4.861878453vw + 65.7679558011px);
+}
+@media screen and (max-width: 374px) {
+  main .code {
+    font-size: 84px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  main .code {
+    font-size: 128px;
+  }
+}
+main .code {
+  line-height: 1;
+  text-transform: uppercase;
+  color: #191919;
+}
+main .title {
+  font-size: calc(0.8839779006vw + 18.6850828729px);
+}
+@media screen and (max-width: 374px) {
+  main .title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  main .title {
+    font-size: 30px;
+  }
+}
+main .title {
+  text-transform: capitalize;
+  color: #191919;
+  margin-bottom: calc(0.4419889503vw + 18.3425414365px);
+}
+@media screen and (max-width: 374px) {
+  main .title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  main .title {
+    margin-bottom: 24px;
+  }
+}
+main .message {
+  font-size: calc(0.4419889503vw + 14.3425414365px);
+}
+@media screen and (max-width: 374px) {
+  main .message {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  main .message {
+    font-size: 20px;
+  }
+}
+main .message {
+  color: #191919;
+}
+main .message:last-of-type {
+  margin-bottom: calc(0.4419889503vw + 18.3425414365px);
+}
+@media screen and (max-width: 374px) {
+  main .message:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  main .message:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+main .button {
+  display: inline-block;
+  font-size: calc(0.2209944751vw + 13.1712707182px);
+}
+@media screen and (max-width: 374px) {
+  main .button {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  main .button {
+    font-size: 16px;
+  }
+}
+main .button {
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+  background: #191919;
+  color: #ffffff;
+  padding: 10px 25px;
+  border: 2px solid #191919;
+  border-radius: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+main .button:hover {
+  background: #ffffff;
+  color: #191919;
+}
+
+/*# sourceMappingURL=style.css.map */
